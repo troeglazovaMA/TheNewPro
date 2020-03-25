@@ -27,7 +27,7 @@
 
             <h2 class="" id="forma">Форма</h2>
 
-            <form action="file.txt" method="POST" >
+            <form action="" method="POST" >
 
               <label>
                 Ваше имя
