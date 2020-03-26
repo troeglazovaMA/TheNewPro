@@ -1,14 +1,16 @@
-﻿<html lang="ru">
+<html lang="ru">
 
 <head>
- 
-  <link rel="stylesheet" href="style.css">
+<meta name="form" content="text/html: charset=utf-8">
+<link rel="stylesheet" href="style.css">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" 
+
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
@@ -21,162 +23,73 @@
 
     <div class="row  justify-content-center d-flex ">
 
-      <div class="col-sm-5  p-0 mx-auto totext">
+      <div class="col-sm-4  p-0 mx-auto text-center totext">
 
                   
 
             <h2 class="" id="forma">Форма</h2>
-
-            <form action="" method="POST" >
-
-              <label>
-                Ваше имя
-
-                <br>
-
-                <input name="field-name-1" value="Введите имя">
-
-              </label>
-
-              <br>
-
-              <label>
-
-                Ваш email:
-
-                <br>
-
-                <input name="field-email" value="test@example.com" type="email">
-
-              </label>
-
-              <br>
-
-              <label>
-
-                Дата рождения:
-
-                <br>
-
-                <input type="date">
-
-              </label>
-
-              <br>
-
-              <label>
-
-                Биография:
-
-                <br>
-
-                <textarea id="bio">Ваш текст</textarea>
-
-              </label>
-
-              <br>
-
-              <label>
-
-                Сверхспособности:
-
-                <br>
-
-                <select name="spos" multiple="multiple">
-
-                  <option value="Способность1">Бессмертие</option>
-
-                  <option value="Способность2" selected="selected">Левитация</option>
-
-                  <option value="Способность3" selected="selected">Прохождение сквозь стены</option>
-
-                </select>
-
-              </label>
-
-              <br>
-
-              <label>
-
-                Количество конечностей:
-
-                <br>
-
- 		<label>
-               <input type="radio" checked="checked" name="radio-group-1" value="Konechnost1">
-
-                  1
-
-              </label>
-
-              <label>
-
-                <input type="radio" checked="checked" name="radio-group-1" value="Konechnost10">
-
-                  10
-
-              </label>
-
-              <label>
-
-                <input type="radio" name="radio-group-1" value="Konechost2">
-
-                  2
-
-              </label>
-
-	     </label>
-
-              <br>
-
-              <label>
-
-                Пол:
-
-                <br>
-
-                <input type="radio" checked="checked" name="radio-group-2" value="1">
-
-                  Мужской
-
-              </label>
-
-              <label>
-
-                <input type="radio" checked="checked" name="radio-group-2" value="2">
-
-                  Женский
-
-              </label>
-
-              <label>
-
-                <input type="radio" name="radio-group-2" value="3">
-
-                  Другое
-
-              </label>
-
-              <br>
-
-              <label>
-
-                <input type="checkbox" checked="checked" name="check-1">
-
-                  С контрактом ознакомлен
-
-              </label>
-
-              <br>
-
-
-              Отправить?
-
-              <input type="submit" value="Отправить">
-
-            </form>
-
-                  </div>
+<form action="" method="POST">
+  Ваше имя:<br/>
+  <input class="mb-3" name="fio" /><br/>
+  Ваша почта:<br/>
+  <input name="email" /><br />
+  Год:<select class="my-3" name="year"> 
+  <?php  for ($i=1900;$i<2020;$i++) {?>
+  <option value="<?php print($i);?>"><?php print($i);?></option>
+  <?php } ?>
+   </select>
+  <br/>
+        Биография:<br/>
+        <textarea name="fieldname">Bio-bio-bio</textarea>
+      <br/>
+      Способности:<br/>
+       <select class="my-3" name="abilities[]" multiple> 
+   <option value="1" selected="selected">БОГ</option>
+   <option value="2" >Левитация</option>
+   <option value="3" >Прохождение сквозь стены</option>
+    <option value="4" >Мыслеречь</option>
+     <option value="5" >Сон</option>
+  </select>
+  
+  
+      
+      <br />
+ 
+  Пол:<br/>
+      <label><input type="radio" checked="checked"
+        name="radiogroup1" value="Male" />
+        Male</label>
+        <label><input type="radio" checked="checked"
+        name="radiogroup1" value="Fem" />
+        FeMale</label>
+      <label><input type="radio"
+        name="radiogroup1" value="3" />
+        Other</label><br />
+        
+        
+    
+      Конечности: <br/>
+      <label><input type="radio" checked="checked"
+        name="radiogroup2" value="One" />
+        1</label>
+      <label><input type="radio"
+        name="radiogroup2" value="Two" />
+        2</label>
+        <label><input type="radio"
+        name="radiogroup2" value="six" />
+        6</label>
+        <label><input type="radio"
+        name="radiogroup2" value="Ten" />
+        10</label>
+        <br />
+        
+  
+      <label><input type="checkbox" checked="checked"
+        name="checks" value="checked" />
+         Cjukfcty!</label><br />
+  <input type="submit" value="save" />
+</form>
+           </div>
 
       </div>
   </div>
