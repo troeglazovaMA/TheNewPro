@@ -1,0 +1,20 @@
+CREATE TABLE application (
+  
+id int(10) unsigned NOT NULL AUTO_INCREMENT,
+  
+name varchar(128) NOT NULL DEFAULT '',
+
+email varchar(128) NOT NULL DEFAULT '',
+
+year int(10) NOT NULL DEFAULT 0,
+fieldname varchar(255) NOT NULL DEFAULT '',
+
+abilities varchar(255) NOT NULL DEFAULT '',
+
+radiogroup1 varchar(10) NOT NULL DEFAULT '',
+ 
+radiogroup2 varchar(10) NOT NULL DEFAULT '',
+cheks varchar(20) NOT NULL DEFAULT '',
+
+PRIMARY KEY (id)
+);
